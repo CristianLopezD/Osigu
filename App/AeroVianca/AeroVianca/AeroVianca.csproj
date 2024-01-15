@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="CustonControls\BindablePasswordBox_2.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Icon\Close.png" />
+    <None Remove="Resources\Icon\Mail.png" />
+    <None Remove="Resources\Icon\Minimize.png" />
+    <None Remove="Resources\Icon\password.png" />
+    <None Remove="Resources\Icon\profile.png" />
+    <None Remove="Resources\Icon\Right_Arrow.png" />
+    <None Remove="Resources\Icon\Right_Arrow_Black.png" />
+    <None Remove="Resources\Icon\Right_Arrow_White.png" />
+    <None Remove="Resources\Icon\user.png" />
+    <None Remove="Resources\Icon\UserAdd_1.png" />
+    <None Remove="Resources\Icon\UserAdd_2.png" />
+    <None Remove="Resources\Images\AeroViancaLogo.png" />
+    <None Remove="Resources\Images\dashboard-template.png" />
+    <None Remove="Resources\Images\info-template.png" />
+    <None Remove="Resources\Images\LoginBackground.jpg" />
+    <None Remove="View\Minimize.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Remove="CustonControls\BindablePasswordBox_2.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Extended.Wpf.Toolkit" Version="4.5.1" />
+    <PackageReference Include="FontAwesome.Sharp" Version="6.3.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Icon\Close.png" />
+    <Resource Include="Resources\Icon\Mail.png" />
+    <Resource Include="Resources\Icon\Minimize.png" />
+    <Resource Include="Resources\Icon\Password.png" />
+    <Resource Include="Resources\Icon\profile.png" />
+    <Resource Include="Resources\Icon\Right_Arrow_Black.png" />
+    <Resource Include="Resources\Icon\Right_Arrow_White.png" />
+    <Resource Include="Resources\Icon\User.png" />
+    <Resource Include="Resources\Icon\UserAdd_1.png" />
+    <Resource Include="Resources\Icon\UserAdd_2.png" />
+    <Resource Include="Resources\Images\AeroViancaLogo.png" />
+    <Resource Include="Resources\Images\dashboard-template.png" />
+    <Resource Include="Resources\Images\info-template.png" />
+    <Resource Include="Resources\Images\LoginBackground.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Settings.Designer.cs">
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Update="View\RegisterPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
